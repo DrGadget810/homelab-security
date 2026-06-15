@@ -55,7 +55,7 @@ Vaultwarden · Termix · Netdata · restic · fail2ban · ufw
 <img width="500" height="500" alt="Netwark-Topology drawio" src="https://github.com/user-attachments/assets/9129cdc9-e47d-4a59-8251-f20cb2d0acd7" />
 
 
-## Zusammenfassung: 
+Zusammenfassung: 
 
 Externer Zugriff ausschließlich über WireGuard (UDP 10439) auf den Bastion-Host.
 
@@ -86,7 +86,7 @@ Ports/Verbindungen durch (umgesetzt mit ufw).
 | Vaultwarden | Debian 12 | Self-hosted Passwort-Manager |
 | Wazuh Manager | Debian 12 | SIEM / XDR — zentrale Log-Auswertung & Detection |
 | Termix | Debian 12 | Zentrale Verwaltung der SSH-Zugänge / Keys |
-| SAMBA AD/ Netdata Manger (Standalone Server) | Debian 12/Docker | Zentrale Verwaltung Benutzer / Rechte |
+| SAMBA AD/ Netdata Manager (Standalone Server) | Debian 12/Docker | Zentrale Verwaltung Benutzer / Rechte |
 
 ## Zugriff & Authentifizierung
 
