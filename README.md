@@ -70,7 +70,7 @@ explizit benötigte Verbindungen zu (Privater PC → Jumphost, SMB-Freigaben).
 | Segment | VLAN | Inhalt | Erreichbarkeit |
 |---|---|---|---|
 | **Heimnetz** | VLAN 2 | Privater PC, Endgeräte | Verbindungen ins Server-Netz nur über Firewall 2 und nur zu erlaubten Zielen |
-| **Server-Netz** | VLAN 10 | Proxmox-Host mit allen VMs/DC Standalone Server | Von außen ausschließlich über Bastion + WireGuard; vom Heimnetz nur gezielt freigegeben |
+| **Server-Netz** | VLAN 10 | Proxmox-Host mit allen VMs/ DC Standalone Server | Von außen ausschließlich über Bastion + WireGuard; vom Heimnetz nur gezielt freigegeben |
 
 Beide Firewalls fahren Default-Deny und lassen ausschließlich benötigte
 Ports/Verbindungen durch (umgesetzt mit ufw).
