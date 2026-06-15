@@ -99,8 +99,8 @@ Heimnetz ohne VPN erreichbar sind (aber nicht aus dem Internet).
 
 WireGuard auf nicht-standardmäßigem Port UDP 10439.
 
-SSH ausschließlich per Key — keine Passwort-Authentifizierung auf irgendeinem Server.
-Pro Key eine eigene Passphrase — wird ein Key kompromittiert, sind die
+SSH ausschließlich per Key keine Passwort-Authentifizierung auf irgendeinem Server.
+Pro Key eine eigene Passphrase wird ein Key kompromittiert, sind die
 übrigen Zugänge nicht betroffen.
 
 Termix als zentrale Stelle zur Verwaltung der SSH-Zugänge.
