@@ -1,8 +1,8 @@
-Homelab — Secured Self-Hosted Infrastructure
+Homelab Secured Self-Hosted Infrastructure
 
 Mehrschichtig segmentierte Homelab-Umgebung mit Fokus auf Containment,
 Zugriff ausschließlich per VPN und durchgängigem Monitoring / Threat
-Detection. Alle Dienste laufen privat — öffentlich erreichbare Workloads
+Detection. Alle Dienste laufen privat öffentlich erreichbare Workloads
 werden bewusst ausgelagert (gemietete Hosts), nicht im Heimnetz betrieben.
 
 - [Überblick](#überblick)
@@ -31,7 +31,7 @@ werden bewusst ausgelagert (gemietete Hosts), nicht im Heimnetz betrieben.
 Dieses Repo dokumentiert Architektur und Absicherung meines privaten Homelabs.
 Leitgedanke ist Containment: Die Serverlandschaft ist so vom Heimnetz
 getrennt, dass eine Kompromittierung der Server nicht automatisch das private
-Netz gefährdet — und umgekehrt.
+Netz gefährdet und umgekehrt.
 
 Wichtig:
 
@@ -106,7 +106,7 @@ Pro Key eine eigene Passphrase — wird ein Key kompromittiert, sind die
 Termix als zentrale Stelle zur Verwaltung der SSH-Zugänge.
 
 Jumphost-Prinzip: Server-Wartung läuft über eine dedizierte Jumphost-VM,
-nicht vom privaten PC aus — das Endgerät bleibt aus der Server-Administration heraus.
+nicht vom privaten PC aus das Endgerät bleibt aus der Server-Administration heraus.
 Verschlüsselung durchgängig (Transport über WireGuard/SSH, Daten verschlüsselt).
 
 ## Härtung
@@ -143,14 +143,14 @@ zu schützen. Bastion + Firewall 1 schützen umgekehrt die Server vor dem Intern
 Bastion als einziger Eintrittspunkt: Eine einzige, stark gehärtete
 Angriffsfläche nach außen (WireGuard) statt mehrerer exponierter Dienste.
 
-fail2ban am Rand verschärft: Filterung dort, wo der Müll ankommt — reduziert
+fail2ban am Rand verschärft: Filterung dort, wo der Müll ankommt reduziert
 Last und Log-Rauschen auf den internen Systemen.
 
 Pro-Key-Passphrasen: Begrenzt den Schaden eines einzelnen kompromittierten Keys.
 
 Jumphost statt Direktzugriff: Trennt das Endgerät von der Server-Administration.
 Öffentliche Workloads ausgelagert: Was öffentlich erreichbar sein muss, läuft
-auf gemieteten Hosts — das Heimnetz bleibt grundsätzlich von außen nicht erreichbar.
+auf gemieteten Hosts das Heimnetz bleibt grundsätzlich von außen nicht erreichbar.
 
 ## Nächste-Schritte:
 
