@@ -54,9 +54,6 @@ Vaultwarden · Termix · Netdata · restic · fail2ban · ufw
 
 <img width="500" height="500" alt="Netwark-Topology drawio" src="https://github.com/user-attachments/assets/9129cdc9-e47d-4a59-8251-f20cb2d0acd7" />
 
-Legende: durchgezogene Pfeile = Netzwerk-Topologie / Trust-Grenzen ·
-gestrichelte Pfeile = beispielhaft erlaubte Verbindungen
-
 
 ## Zusammenfassung: 
 
