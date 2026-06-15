@@ -159,6 +159,7 @@ Wazuh-Alerting-Regeln erweitern und Dokumentieren
 Test und Dokumentation Restic Backup Restore
 
 Hinweis:
+
 Der geänderte WireGuard-Port reduziert nur das Scan-Rauschen und ersetzt **keine** der
 anderen Maßnahmen.
 
